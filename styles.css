@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+  background: #fff;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #f5f5f5;
+  flex-wrap: wrap;
+  position: relative;
+}
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+header h1 span {
+  color: #e6007e;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.hero {
+  padding: 2rem;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+.hero span.red {
+  color: #e6007e;
+  font-weight: 700;
+}
+.card {
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #d28bff, #ff7ebe);
+  color: #fff;
+  text-align: center;
+}
+.card .preview {
+  background: #ddd;
+  height: 150px;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.card img.icon {
+  width: 60px;
+  height: 60px;
+  margin: 1rem auto;
+  display: block;
+}
+.card h3 {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+  font-weight: 700;
+  color: #000;
+}
+.card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0.5rem auto 0;
+  color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #f5f5f5;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1rem;
+  }
+  nav a {
+    margin: 0.5rem 0;
+  }
+  nav.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .hero h2 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .card {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  .card .preview {
+    height: 120px;
+  }
+  .card h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+  .card {
+    padding: 1rem;
+  }
+  .card h3 {
+    font-size: 1.3rem;
+  }
+  .card p {
+    font-size: 0.9rem;
+  }
+}
