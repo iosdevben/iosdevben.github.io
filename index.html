@@ -8,27 +8,93 @@
 </head>
 <body>
   <header>
-    <h1><span>Jammin</span>Apps</h1>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    <nav id="nav-menu">
-      <a href="apps.html">Apps</a>
-      <a href="blog.html">Blog</a>
-      <a href="about.html">About</a>
-    </nav>
+    <div class="header-content">
+      <img src="images/JamminApps.svg" alt="JamminApps" class="logo">
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <nav id="nav-menu">
+        <a href="apps.html">Apps</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
   </header>
 
   <section class="hero">
-    <h2>Apps by Benjamin</h2>
-    <p>Beautiful and easy to use apps for iOS and iPadOS.</p>
-    <p><span class="red">The latest.</span> New releases and updates.</p>
+    <div class="hero-content">
+      <div class="hero-left">
+        <h1>Apps by Benjamin</h1>
+      </div>
+      <div class="hero-right">
+        <p>Beautiful and easy to use<br>apps for iOS and iPadOS.</p>
+      </div>
+    </div>
+    <p class="hero-tagline"><span class="pink">The latest.</span> <span class="gray">New releases and updates.</span></p>
+
+    <div class="featured-card">
+      <div class="preview"></div>
+      <img src="images/HarkenIcon.svg" alt="Harken Icon" class="icon">
+      <h3>Harken 5.0</h3>
+      <p>Introducing Harken 5.0, a major update that brings Harken to the iPad, and an overhaul of the library controls, making it even easier than ever to rediscover forgotten favourites and start listening to your music even more quickly.</p>
+    </div>
   </section>
 
-  <section class="card">
-    <div class="preview"></div>
-    <img src="app-icon.png" alt="Harken Icon" class="icon">
-    <h3>Harken 5.0</h3>
-    <p>Introducing Harken 5.0, a major update that brings Harken to the iPad, and an overhaul of the library controls, making it even easier than ever to rediscover forgotten favourites and start listening to your music even more quickly.</p>
+  <section class="apps-section">
+    <div class="apps-container">
+      <h2>Apps</h2>
+      
+      <div class="app-card">
+      <div class="app-content">
+        <div class="app-content-header">
+          <img src="images/HarkenIcon.svg" alt="Harken Icon" class="app-icon">
+          <div class="app-title-group">
+            <h3>Harken</h3>
+            <p class="subtitle">Music Player</p>
+          </div>
+        </div>
+        <div class="app-text">
+          <p class="description">Short description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <div class="app-buttons">
+            <a href="#" class="app-store-button">
+              <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+            </a>
+            <a href="#" class="learn-more">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="app-image">
+        <img src="images/harken-preview.png" alt="Harken App Preview">
+      </div>
+    </div>
+
+    <div class="app-card">
+      <div class="app-content">
+        <div class="app-content-header">
+          <img src="app-icon.png" alt="Speed Limit Icon" class="app-icon">
+          <div class="app-title-group">
+            <h3>Speed Limit</h3>
+            <p class="subtitle">Speedometer</p>
+          </div>
+        </div>
+        <div class="app-text">
+          <p class="description">Short description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <div class="app-buttons">
+            <a href="#" class="app-store-button">
+              <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+            </a>
+            <a href="#" class="learn-more">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="app-image">
+        <img src="images/speedlimit-preview.png" alt="Speed Limit App Preview">
+      </div>
+    </div>
+    </div>
   </section>
+
+  <footer>
+    <p>© 2025 Ben Thomas</p>
+  </footer>
 
   <script>
     function toggleMenu() {
