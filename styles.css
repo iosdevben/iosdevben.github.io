@@ -16,8 +16,8 @@
   --color-grey-9: #333;
 
   /* Gradient colors */
-  --color-gradient-start: var(--color-purple);
-  --color-gradient-end: #FFCCFF;
+  --color-gradient-start: #070651;
+  --color-gradient-end: #6800A1;
   
   /* Text colors */
   --color-text-primary: var(--color-grey-9);
@@ -47,7 +47,7 @@ header {
 }
 
 .header-content {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
   display: flex;
@@ -83,7 +83,7 @@ nav a {
 
 .hero {
   padding: 4rem 2rem 4em;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -166,9 +166,9 @@ nav a {
 
 .featured-card h3 {
   margin: 0.5rem 0;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 600;
-  color: var(--color-text-primary);
+  color: var(--color-text-white);
 }
 
 .featured-card p {
@@ -185,7 +185,7 @@ nav a {
 }
 
 .apps-container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 2rem;
