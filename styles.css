@@ -15,9 +15,12 @@
   --color-grey-8: #666;
   --color-grey-9: #333;
 
+  --color-deep-indigo: #070651;
+  --color-deep-purple: #2E1A5F;
+
   /* Gradient colors */
-  --color-gradient-start: #070651;
-  --color-gradient-end: #6800A1;
+  --color-gradient-start: var(--color-deep-indigo);
+  --color-gradient-end: var(--color-indigo);
   
   /* Text colors */
   --color-text-primary: var(--color-grey-9);
@@ -101,7 +104,7 @@ nav a {
 
 .hero-left h1 {
   margin: 0;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -113,8 +116,8 @@ nav a {
   line-height: 1.4;
 }
 
-.hero-tagline .pink {
-  color: var(--color-pink);
+.hero-tagline .tagline-color {
+  color: var(--color-indigo);
 }
 
 .hero-tagline .gray {
@@ -139,7 +142,7 @@ nav a {
 
 .featured-card {
   margin: 2rem 0;
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 0rem;
   border-radius: 2rem;
   background: radial-gradient(ellipse 100% 100% at 50% 40px, var(--color-gradient-start), var(--color-gradient-end));
   color: var(--color-bg-primary);
@@ -149,11 +152,8 @@ nav a {
 .featured-card .preview {
   background: rgba(255, 255, 255, 0.3);
   height: 180px;
-  border-radius: 0.75rem;
-  margin-bottom: 1.5rem;
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 2rem auto 0;
 }
 
 .featured-card img.icon {
@@ -180,7 +180,7 @@ nav a {
 }
 
 .apps-section {
-  padding: 4rem 0;
+  padding: 4rem 3rem;
   background: var(--color-bg-tertiary);
 }
 
@@ -188,77 +188,72 @@ nav a {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .apps-section h2 {
   margin: 0 0 3rem 0;
   font-size: 3rem;
   font-weight: 600;
-  color: var(--color-indigo);
+  color: var(--color-pink);
 }
 
 .app-card {
   background: var(--color-bg-primary);
   border-radius: 2rem;
-  padding: 2rem;
+  padding: 3rem;
   margin-bottom: 2rem;
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 2rem;
-  align-items: center;
+  gap: 0;
+  align-items: stretch;
 }
 
 .app-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.5rem;
+  min-height: 400px;
+  position: relative;
 }
 
-.app-content-header {
+.app-header {
   display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
 }
 
 .app-icon {
-  width: 58px;
-  height: 58px;
+  width: 100px;
+  height: 100px;
   flex-shrink: 0;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
 }
 
-.app-text {
-  flex: 1;
-}
-
-.app-title-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.app-title-group h3 {
+.app-header h3 {
   font-size: 2rem;
   font-weight: 600;
   margin: 0;
 }
 
-.app-text .subtitle {
-  margin: 0 0 1.5rem 0;
-  font-size: 1.2rem;
-  color: var(--color-text-secondary);
-  font-weight: 500;
+.app-description {
+  margin: auto 0;
+}
+
+.description {
+  line-height: 1.6;
+  margin: 0;
+}
+
+.description + .description {
+  margin-top: 1em;
 }
 
 .app-text .description {
   line-height: 1.6;
   font-size: 1rem;
   color: var(--color-text-primary);
-  margin: 0 0 1.5rem 0;
+  margin: 0;
 }
 
 .app-buttons {
@@ -297,21 +292,27 @@ nav a {
 .app-image {
   flex-shrink: 0;
   display: flex;
-  gap: 1em;
   align-items: flex-end;
   max-width: 100%;
+  padding-left: 0;
 }
 
 .app-image .phone-image {
-  max-width: 180px;
-  height: auto;
+  height: 480px;
+  width: auto;
   display: block;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0rem;
+  transform: translateX(50%);
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
 }
 
 .app-image .tablet-image {
-  max-width: 325px;
-  height: auto;
+  height: 720px;
+  width: auto;
   display: block;
+  padding-bottom: 3rem;
 }
 
 footer {
