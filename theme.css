@@ -13,7 +13,7 @@
   --color-grey-1: #F0F0F0;
   --color-grey-7: #87878A;
   --color-grey-8: #666;
-  --color-grey-9: #333;
+  --color-grey-9: #1D1D1F;
 
   --color-deep-indigo: #070651;
   --color-deep-purple: #2E1A5F;
@@ -24,6 +24,8 @@
   
   /* Text colors - Light mode */
   --color-text-primary: var(--color-grey-9);
+  --color-text-primary-inverted: var(--color-text-white);
+  
   --color-text-secondary: var(--color-grey-8);
   --color-text-tertiary: var(--color-grey-7);
   --color-text-white: var(--color-white);
@@ -40,7 +42,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* Text colors - Dark mode */
-    --color-text-primary: #FFFFFF;
+    --color-text-primary: var(--color-text-white);
     --color-text-secondary: #EBEBF5;
     --color-text-tertiary: #EBEBF599;
     
@@ -51,6 +53,6 @@
     
     /* Gradient colors - Dark mode */
     --color-gradient-start: #1a0066;
-    --color-gradient-end: #4d4bb8;
+    --color-gradient-end: #302f81;
   }
 }
