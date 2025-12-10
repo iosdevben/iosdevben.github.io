@@ -8,7 +8,6 @@ body {
 header {
   background: var(--color-bg-secondary);
   padding: 1rem 0;
-  position: sticky;
   top: 0;
   z-index: 100;
 }
@@ -163,6 +162,9 @@ nav a {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .apps-section h2 {
@@ -176,10 +178,9 @@ nav a {
   background: var(--color-bg-primary);
   border-radius: 2rem;
   padding: 3rem;
-  margin-bottom: 2rem;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 0;
+  margin-bottom: 0rem;
+  display: flex;
+  gap: 2rem;
   align-items: stretch;
 }
 
@@ -272,22 +273,11 @@ nav a {
   padding-left: 0;
 }
 
-.app-image .phone-image {
-  height: 480px;
-  width: auto;
+.app-image .images {
+  height: auto;
+  max-width: 100%;
   display: block;
-  position: relative;
-  z-index: 2;
-  margin-bottom: 0rem;
-  transform: translateX(50%);
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
-}
-
-.app-image .tablet-image {
-  height: 720px;
-  width: auto;
-  display: block;
-  padding-bottom: 3rem;
 }
 
 footer {
