@@ -13,9 +13,6 @@ header {
 }
 
 .header-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,10 +55,14 @@ nav a {
   cursor: pointer;
 }
 
-.hero {
-  padding: 4rem 2rem 4em;
+.container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.hero {
+  padding: 4rem 0 4em;
 }
 
 .hero-content {
@@ -154,14 +155,11 @@ nav a {
 }
 
 .apps-section {
-  padding: 4rem 3rem;
+  padding: 4rem 0;
   background: var(--color-bg-tertiary);
 }
 
 .apps-container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -190,6 +188,10 @@ nav a {
   align-items: flex-start;
   min-height: 400px;
   position: relative;
+  flex-shrink: 2;
+  flex-basis: 0;
+  flex-grow: 1;
+  gap: 2rem;
 }
 
 .app-header {
@@ -210,10 +212,6 @@ nav a {
   font-size: 2rem;
   font-weight: 600;
   margin: 0;
-}
-
-.app-description {
-  margin: auto 0;
 }
 
 .description {
@@ -259,6 +257,7 @@ nav a {
   -webkit-mask-image: paint(smooth-corners);
   mask-image: paint(smooth-corners);
   --smooth-corners: 4;
+  white-space: nowrap;
 }
 
 .learn-more:hover {
@@ -266,18 +265,30 @@ nav a {
 }
 
 .app-image {
-  flex-shrink: 0;
+  flex-shrink: 1;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   max-width: 100%;
   padding-left: 0;
+  min-width: 0;
 }
 
 .app-image .images {
   height: auto;
+  width: 100%;
   max-width: 100%;
   display: block;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+}
+
+@media (min-width: 1105px) {
+  .app-image {
+    flex-shrink: 0;
+  }
+  
+  .app-image .images {
+    width: auto;
+  }
 }
 
 footer {
@@ -287,9 +298,6 @@ footer {
 }
 
 .footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -352,9 +360,12 @@ footer {
   .featured-card h3 {
   }
   .app-card {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     padding: 2rem;
     gap: 2rem;
+  }
+  .app-image {
+    justify-content: center;
   }
   .app-image img {
     max-width: 100%;
