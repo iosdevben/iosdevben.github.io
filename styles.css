@@ -241,6 +241,21 @@ nav a {
   display: block;
 }
 
+/* Show/hide App Store badges based on color scheme */
+.app-store-badge.dark-mode {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .app-store-badge.light-mode {
+    display: none;
+  }
+  
+  .app-store-badge.dark-mode {
+    display: block;
+  }
+}
+
 .learn-more {
   padding: 0 16px;
   border: 2px solid var(--color-border-indigo);
@@ -278,7 +293,6 @@ nav a {
   width: 100%;
   max-width: 100%;
   display: block;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
 }
 
 @media (min-width: 1105px) {
