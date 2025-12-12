@@ -9,8 +9,8 @@
   --color-teal:   #01778B;
   --color-white:  #FFFFFF;
   
-  --color-grey-0: #F9F9F9;
-  --color-grey-1: #F0F0F0;
+  --color-grey-0: #F9F9FB;
+  --color-grey-1: #F0F0F2;
   --color-grey-7: #87878A;
   --color-grey-8: #666;
   --color-grey-9: #1D1D1F;
@@ -31,7 +31,7 @@
   --color-text-white: var(--color-white);
   
   /* Background colors - Light mode */
-  --color-bg-primary: #fff;
+  --color-bg-primary: var(--color-white);
   --color-bg-secondary: var(--color-grey-0);
   --color-bg-tertiary: var(--color-grey-1);
   
