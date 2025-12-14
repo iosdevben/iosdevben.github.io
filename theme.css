@@ -8,6 +8,7 @@
   --color-red:    #C20517;
   --color-teal:   #01778B;
   --color-white:  #FFFFFF;
+  --color-black:  #000000;
   
   --color-grey-0: #F9F9FB;
   --color-grey-1: #F0F0F2;
@@ -17,6 +18,10 @@
 
   --color-deep-indigo: #070651;
   --color-deep-purple: #2E1A5F;
+
+  /* Header color */
+  --color-header-bg: var(--color-bg-white);
+  --color-footer-bg: var(--color-header-bg);
 
   /* Gradient colors */
   --color-gradient-start: var(--color-deep-indigo);
@@ -41,7 +46,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Text colors - Dark mode */
+    /* Header color */
+    --color-header-bg: var(--color-black);
+
+  /* Text colors - Dark mode */
     --color-text-primary: var(--color-text-white);
     --color-text-secondary: #EBEBF5;
     --color-text-tertiary: #EBEBF599;
