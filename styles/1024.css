@@ -1,0 +1,17 @@
+@media (max-width: 1024px) {
+  .app-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .app-image {
+    justify-content: center;
+  }
+
+  .app-image {
+    flex-shrink: 0;
+  }
+  
+  .app-image .images {
+    width: auto;
+  }
+}
