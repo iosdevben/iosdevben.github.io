@@ -350,6 +350,10 @@ footer {
   font-size: 12px;
 }
 
+.footer-content a {
+  color: white;
+}
+
 .section-grey-bg {
   background: var(--color-grey-0);
   padding: 10rem 0 4rem 0;
