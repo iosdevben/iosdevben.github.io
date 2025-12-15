@@ -20,7 +20,7 @@
   --color-deep-purple: #2E1A5F;
 
   /* Header color */
-  --color-header-bg: var(--color-bg-white);
+  --color-header-bg: var(--color-grey-0);
   --color-footer-bg: var(--color-header-bg);
 
   /* Gradient colors */

@@ -1,8 +1,37 @@
 @media (max-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding: 3rem 0 3rem;
+  }
+
+  .hero-left h1 {
+    font-size: 4rem;
+  }
+
+   .featured-card {
+      padding: 3rem;
+    }
+
   .app-card {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+
   .app-image {
     justify-content: center;
   }
