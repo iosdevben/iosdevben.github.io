@@ -209,6 +209,7 @@ h1, h2, h3, h4 {
 .apps-container {
   display: flex;
   flex-direction: column;
+  gap: 3rem;
 }
 
 .apps-section h2 {
