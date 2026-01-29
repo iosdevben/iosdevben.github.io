@@ -23,9 +23,9 @@
     font-size: 4rem;
   }
 
-   .featured-card {
-      padding: 3rem;
-    }
+  .featured-card {
+    padding: 3rem;
+  }
 
   .app-card {
     grid-template-columns: 1fr;
